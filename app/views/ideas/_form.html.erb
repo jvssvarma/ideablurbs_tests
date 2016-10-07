@@ -1,0 +1,31 @@
+<%= form_for @idea, html: { multipart: true } do |f| %>
+  <% if @idea.errors.any? %>
+     <h2><%= pluralize(@idea.errors.count, "error") %> prevented this Idea blurb from saving:</h2>
+     <ul>
+     	<% @idea.errors.full_messages.each do |m| %>
+     	   <li><%= m %></li>
+     	<% end %>
+     </ul>
+  <% end %>
+
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+
+
+  <br>
+  <br>
+
+
+  <%= f.label :blurb, "Blurb you Idea here" %><br>
+  <%= f.text_area :blurb %>
+
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+
+<br>
+
+<%= link_to 'Back', ideas_path %>
