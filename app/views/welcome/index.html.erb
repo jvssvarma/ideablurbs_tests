@@ -1,6 +1,125 @@
-<h1>Welcome#index</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ideablurbs | post &amp; explore everyday ideas</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
 
-<br>
-<br>
+<body>
+	<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 overflow">
+               <div class="social-icons pull-right">
+                    <ul class="nav nav-pills">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-<%= link_to 'ideas', ideas_path %>
+                <a class="navbar-brand" href="index.html">
+                  <h1><img src="images/logo_dark.png" alt="logo" style="width: 250px;"></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                      <div class="contact-form bottom">
+                          <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                              <div class="form-group">
+                                  <input type="text" name="name" class="form-control" required="required" placeholder="username or email">
+                              </div>
+                              <div class="form-group">
+                                  <input type="email" name="email" class="form-control" required="required" placeholder="password">
+                              </div>
+                              <div class="form-group">
+                                  <input type="submit" name="submit" class="btn btn-submit" value="sign in">
+                              </div>
+                          </form>
+                      </div>
+                        <p><a href="#" class="btn btn-common">SIGN UP</a> &nbsp;
+                          <a href="#" class="btn btn-common"><i class="fa fa-twitter"></i> twitter</a> &nbsp;
+                          <a href="#" class="btn btn-common"><i class="fa fa-instagram"></i> instagram</a>
+                        </p>
+                    </div>
+                    <img src="images/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/house.png" class="slider-house" alt="slider image">
+                    <img src="images/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+
+  <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/under.png" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="popular bottom">
+                        <h2>Popular Idea Blurb</h2>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Most Popular Idea from many depending on the popularity result from sentimental gem.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
+                            </div>
+                         </div>
+                         <h2>Most Liked Idea Blurb</h2>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Most Liked idea blurb post with highest like number from many .</blockquote>
+                                <h3><a href="#">- Abraham Josef</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-info bottom">
+                        <h2>Contact</h2>
+                        <address>
+                        E-mail: <a href="mailto:varma@ideablurbs.com">varma@ideablurbs.com</a> <br>
+                        Phone: +1 (510) 240 9970 <br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; IdeaBlurbs 2016. All Rights Reserved.</p>
+                        <p>Created by <a target="_blank" href="http://www.codevarma.com/about">Varma</a> &amp; <a target="_blank" href="#">Naga</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
