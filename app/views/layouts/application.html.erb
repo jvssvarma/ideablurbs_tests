@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ideablurbs</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
 
   <body>
+    <% unless current_page?(root_path) %>
+      <%= render 'layouts/header'; %>
+    <% end %>
     <%= yield %>
+    <% unless current_page?(root_path) %>
+      <%= render 'layouts/footer'; %>
+    <% end %>
   </body>
 </html>

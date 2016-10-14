@@ -16,8 +16,170 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+#page-breadcrumb {
+  position: relative;
+  background-image: url(../images/tour-bg.png);
+  background-color: #fbfafa;
+  background-repeat: repeat-x;
+  height: 130px;
+  background-position: center;
+  display: table;
+  position: static;
+  width: 100%;
+}
+
 .overflow {
   overflow: hidden;
 }
 
+.padding-top {
+  padding-top: 90px;
+}
+
+.padding-bottom {
+  padding-bottom: 65px;
+}
+
+.search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 1;
+  i {
+    color: #00aeef;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+  }
+}
+
+.search-form {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  color: #818285;
+  font-weight: 300;
+  outline: none;
+  border: 1px solid #00aeef;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.title {
+  color: #404040;
+  font-weight: 300;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  position: statice;
+}
+
+.action {
+  h1 {
+    margin-top: 0;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  .btn-common {
+    margin-top: 55px;
+    float: left;
+  }
+}
+
+.masonery_area .single-blog {
+  .post-thumb {
+    height: auto;
+  }
+  .post-title {
+    margin-top: 5px;
+    a {
+      font-size: 20px;
+    }
+  }
+  .post-thumb img {
+    height: auto;
+  }
+  .post-bottom {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 15px;
+  }
+}
+
+.post-title {
+  margin-top: 0;
+  a {
+    color: #686868;
+  }
+}
+
+.post-bottom {
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin: 20px -20px 0;
+  padding: 20px 20px 0;
+}
+
+.post-thumb {
+  margin: -1px -1px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-content {
+  padding: 20px 0;
+}
+
+.post-content .post-author {
+  margin-top: 0;
+  a {
+    font-weight: 300;
+    font-size: 14px;
+    color: #0099AE;
+  }
+}
+
+.post-nav {
+  margin: 0;
+  padding: 0;
+  li a {
+    color: #0099AE;
+    padding: 0;
+    text-align: left;
+    i {
+      color: #0099AE;
+      margin-right: 8px;
+    }
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+a.read-more {
+  color: #0099AE;
+  font-weight: 300;
+  &:hover {
+    color: #01707F;
+  }
+}
+
+.field-toggle {
+  position: relative;
+  top: 30px;
+  right: 15px;
+  display: none;
+  height: 50px;
+}
+
 @import "welcome";
+@import "responsive";

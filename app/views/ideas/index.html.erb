@@ -1,9 +1,53 @@
-<h1> Ideas index </h1>
+<head>
+  <title>Ideablurbs | Ideas Feed</title>
+</head>
 
-<% @ideas.each do |idea| %>
-  <h3><%= link_to idea.title, idea %></h3>
-  <p><%= idea.blurb %></p>
-  <br>
-<% end %>
+<body>
+  <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">See What's blurbing</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="padding-top padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="masonery_area">
+                  <% @ideas.each do |idea| %>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-blog two-column">
+                            <div class="post-thumb">
+                                <a href="#"><img src="images/1.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="post-content overflow">
+                                <ul class="nav nav-justified post-nav">
+                                    <li><a href="#"><i class="fa fa-tag"></i>Category</a></li>
+                                </ul>
+                                <h2 class="post-title bold"><%= link_to idea.title, idea %></a></h2>
+                                <h3 class="post-author"><a href="#">Posted by user.username</a></h3>
+                                <p><%= idea.blurb %></p>
+                                <a href="#" class="read-more">View More</a>
+                                <div class="post-bottom overflow">
+                                    <ul class="nav nav-justified post-nav">
+                                        <li><a href="#"><i class="fa fa-heart"></i>32 Love</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i>3 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <% end %>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
 
 <%= link_to 'New Idea Blurb', new_idea_path %>
