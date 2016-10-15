@@ -24,13 +24,13 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="single-blog two-column">
                             <div class="post-thumb">
-                                <a href="#"><img src="images/1.jpg" class="img-responsive" alt=""></a>
+                                <a href="#"><%=link_to (image_tag idea.image.url(:small), :class => "img-responsive"), idea %></a>
                             </div>
                             <div class="post-content overflow">
                                 <ul class="nav nav-justified post-nav">
                                     <li><a href="#"><i class="fa fa-tag"></i>Category</a></li>
                                 </ul>
-                                <h2 class="post-title bold"><%= link_to idea.title, idea %></a></h2>
+                                <h2 class="post-title bold"><%= link_to idea.title, idea %></h2>
                                 <h3 class="post-author"><a href="#">Posted by user.username</a></h3>
                                 <p><%= idea.blurb %></p>
                                 <a href="#" class="read-more">View More</a>
@@ -49,5 +49,3 @@
       </div>
   </section>
 </body>
-
-<%= link_to 'New Idea Blurb', new_idea_path %>
